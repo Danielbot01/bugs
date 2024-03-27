@@ -8,7 +8,7 @@ export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) 
   const chat = global.db.data.chats[m.chat];
   const bot = global.db.data.settings[this.user.jid] || {};
   if (bot.antiPrivate && !isOwner && !isROwner) {
-    await m.reply(`_*< ANTI-PRIVADO />*_\n\n*HOLA, SOY  MONOVAN BOT , PARA HABLAR AL PRIVADO SOLO ES POSIBLE CON MI CREADOR, SI QUIERES ALQUILARME ENTRA AL SIGUIENTE GRUPO* https://chat.whatsapp.com/GuLhkVDo8XX3VeIXU93psI`, false, {mentions: [m.sender]});
+    await m.reply(`_*< ANTI-PRIVADO />*_\n\n*Como te gusta mamar vrg pa al privado no se habla si quieres probar el bot unete https://chat.whatsapp.com/L0pLoI1DRRz58NV2mS6bop si quieres hablar con mi dueño solo manda mensaje a +52 729 9350963`, false, {mentions: [m.sender]});
     await this.updateBlockStatus(m.chat, 'block');
   }
   return !1;
