@@ -2,7 +2,7 @@
  
 let handler = m => m
 handler.all = async function (m) {
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let fkontak = { "key": { "participants":"5217299350963@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let chat = global.db.data.chats[m.chat]
 let name = conn.getName(m.sender)
   if (m.isBaileys && m.fromMe) return !0;
@@ -15,7 +15,7 @@ ${pickRandom([`¡Descubre nuestra increíble selección! 🤖✨
 
 May Bot 🌺
 Monovan Bot 🚀
-Chinga a tu Madre Bot 💥 
+Bugs Bunny Bot 💥 
 Bot personalizado 🎨
 Chatbot 💬
 Hosting para tus bots! 🌐💼
@@ -34,7 +34,7 @@ if (/^may bot|maybot|may$/i.test(m.text) ) { //sin prefijo
     let teks = `
 ${pickRandom([`¡Descubre May Bot! 🌺🤖 Especialmente diseñado para potenciar tus grupos de Ventas. 🛍️ Los comandos más comunes incluyen stickers, menciones, bienvenidas, despedidas, música y juegos. 🎶🎮 ¡Un Bot activo las 24 horas, los 7 días de la semana! 🕒
 
-¡Todo esto por un precio increíble! 💼🌟 Solo 30mx o 2usd, ¡y es permanente! 💰🔒`])}
+¡Todo esto por un precio increíble! 💼🌟 Solo 50mx o 4usd, ¡y es permanente! 💰🔒`])}
 `.trim()
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
@@ -44,16 +44,16 @@ if (/^monovanbot|monovan bot|monovan$/i.test(m.text) ) { //sin prefijo
     let teks = `
 ${pickRandom([`¡Descubre Monovan Bot! 🤖✨ Especialmente diseñado para potenciar tus grupos de Ventas. 🛍️ Los comandos más comunes incluyen stickers, menciones, bienvenidas, despedidas, música y juegos. 🎶🎮 ¡Un Bot activo las 24 horas, los 7 días de la semana! 🕒
 
-¡Todo esto por un precio increíble! 💼🌟 Solo 30mx o 2usd, ¡y es permanente! 💰🔒`])}
+¡Todo esto por un precio increíble! 💼🌟 Solo 50mx o 4usd, ¡y es permanente! 💰🔒`])}
 `.trim()
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 }
 if (/^chingatumadre|chinga tu madre|chinga tu madre bot$/i.test(m.text) ) { //sin prefijo 
     let teks = `
-${pickRandom([`¡Descubre Bot Chinga a tu Madre! 🐻🖕🏻Especialmente diseñado para potenciar tus grupos de Ventas. 🛍️ Los comandos más comunes incluyen stickers, menciones, bienvenidas, despedidas, música y juegos. 🎶🎮 ¡Un Bot activo las 24 horas, los 7 días de la semana! 🕒
+${pickRandom([`¡Descubre Bugs Bunny Bot! 🐻🖕🏻Especialmente diseñado para potenciar tus grupos de Ventas. 🛍️ Los comandos más comunes incluyen stickers, menciones, bienvenidas, despedidas, música y juegos. 🎶🎮 ¡Un Bot activo las 24 horas, los 7 días de la semana! 🕒
 
-¡Todo esto por un precio increíble! 💼🌟 Solo 30mx o 2usd, ¡y es permanente! 💰🔒`])}
+¡Todo esto por un precio increíble! 💼🌟 Solo 50mx o 4usd, ¡y es permanente! 💰🔒`])}
 `.trim()
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
@@ -71,7 +71,7 @@ if (/^chatbot|chat bot|ventas bot|ventasbot$/i.test(m.text) ) { //sin prefijo
     let teks = `
 ${pickRandom([`¡Haz que tus ventas sean más fáciles que nunca con nuestro ChatBot! 💬🛍️ Diseñado para que puedas hacer tus ventas de manera autónoma. ¡Solo envía la información de tus productos y deja que haga todo el trabajo por ti! 🌟
 
-¡Todo esto por solo 170mx o 11usd! 💼💰 ¡No esperes más para simplificar tu proceso de ventas!`])}
+¡Todo esto por solo 100mx o 6usd! 💼💰 ¡No esperes más para simplificar tu proceso de ventas!`])}
 `.trim()
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
@@ -81,17 +81,17 @@ if (/^host|hosting|hosting para tus bots$/i.test(m.text) ) { //sin prefijo
     let teks = `
 ${pickRandom([`¡Optimiza el rendimiento de tu bot con nuestro Hosting! 🌐🚀 ¡Mantén tu bot funcionando sin interrupciones y siempre en la cima! 🥇
 
-🔹 Plan 1: 100mx o 4usd
+🔹 Plan 1: 60mx o 4usd
 - 700 Mb de RAM
 - 3 GB de disco
-- 150% de CPU
+- 100% de CPU
 
-🔹 Plan 2: 170mx o 6usd
+🔹 Plan 2: 80mx o 5usd
 - 1 GB de RAM
 - 5 GB de disco
 - 200% de CPU
 
-🔹 Plan 3: 240mx o 9usd
+🔹 Plan 3: 110mx o 7usd
 - 2 GB de RAM
 - 10 GB de disco
 - 300% de CPU
@@ -211,7 +211,7 @@ if (/^¿que es un bot?|Que es un bot$/i.test(m.text) ) { //sem prefixo
 ┆ 𝐧𝐨 𝐢𝐧𝐭𝐞𝐫𝐟𝐢𝐞𝐫𝐞 𝐞𝐧 𝐞𝐥 𝐩𝐫𝐨𝐜𝐞𝐬𝐨 
 ┆ 𝐏𝐚𝐫𝐚 𝐯𝐞𝐫 𝐞𝐥 𝐦𝐞𝐧𝐮́ 𝐝𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐩𝐮𝐞𝐝𝐞𝐬 𝐮𝐬𝐚𝐫 #menu
 ┆ 
-┆ 「 MichiBot 」
+┆ 「 Bugs Bunny 」
 ╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }  
