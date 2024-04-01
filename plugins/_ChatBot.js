@@ -9,7 +9,7 @@ let name = conn.getName(m.sender)
   if (m.isGroup) return !1;
   if (!m.message) return !0;
 
-if (/^menu de ventas|menú de ventas|ventas$/i.test(m.text) ) { //sin prefijo 
+if (/^menu de ventas|menú de ventas|Hola|ola|info|ventas$/i.test(m.text) ) { //sin prefijo 
     let teks = `
 ${pickRandom([`¡Descubre nuestra increíble selección! 🤖✨ 
 
