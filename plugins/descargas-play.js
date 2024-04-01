@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 import axios from 'axios';
 import {youtubedl, youtubedlv2} from '@bochilteam/scraper';
 import fs from "fs";
